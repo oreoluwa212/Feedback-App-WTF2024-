@@ -8,15 +8,15 @@ function ReviewList({reviews, deleteReview}) {
         
   return (
     <>
-      <div>
+      <div className="flex-item" >
         {reviews.map((item) => (
-            <div key={item.id}>
-                <ReviewItem review={item} deleteReview={deleteReview} />
-            </div>
+          <div key={item.id}>
+            <ReviewItem review={item} deleteReview={deleteReview} />
+          </div>
         ))}
       </div>
     </>
-  )
+  );
 }
 
 export default ReviewList
